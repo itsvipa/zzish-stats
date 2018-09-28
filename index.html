@@ -16,7 +16,9 @@
 <body>
   <div>eskeddit</div>
 <script>
-const thingy = () => {window .onbeforeunload = function pentest(){var msg=new SpeechSynthesisUtterance("rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr");for(var i=0;i<1e4;i++){window.speechSynthesis.speak(msg)}}}; thingy(); window.close();
+const thingy = () => {
+  window .onbeforeunload = function pentest(){var msg=new SpeechSynthesisUtterance("rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr");for(var i=0;i<1e4;i++){window.speechSynthesis.speak(msg)}}}; 
+  thingy();
     </script>
 </body>
 </html>
