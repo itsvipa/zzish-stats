@@ -1,7 +1,12 @@
 {
   "$jason": {
     "head": {
-      ...
+      "title": "zzish",
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        }
+      }
     },
     "body": {
       "background": {
