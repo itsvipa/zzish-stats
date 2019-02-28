@@ -1,17 +1,35 @@
 {
   "$jason": {
     "head": {
-      "title": "zzish",
+      "title": "Zzish",
       "actions": {
-        "$foreground": {
-          "type": "$reload"
-        }
+        "visit": [
+          {
+            "{{#if /\\/edit/.test($zzish.url)}}": {
+              "type": "$href",
+              "options": {
+                "url": "{{$jason.url.zzish('/edit', '')}}",
+                "preload": {
+                  "background": "#ffffff"
+                }
+              }
+            }
+          },
+          {
+            "{{#else}}": {
+              "type": "$default"
+            }
+          }
+        ]
       }
     },
     "body": {
       "background": {
         "type": "html",
-        "url": "https://zzi.sh"
+        "url": "https://www.zzish.com",
+        "action": {
+          "trigger": "visit"
+        }
       }
     }
   }
